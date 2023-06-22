@@ -5,11 +5,11 @@ const menu = [
       name: 'Classic Pancakes',
       description: 'Fluffy buttermilk pancakes served with maple syrup and a pat of butter.',
       price: 8.99,
-      image: 'https://source.unsplash.com/Ra4wxfmP84A',
+      image: 'src/assets/images/Classic Pancakes.jpg',
       healthBenefits: ['Good source of carbohydrates', 'Provides energy for the day'],
       reviews: [
-        { username: 'JohnDoe', rating: 4.5, comment: 'Delicious pancakes! Fluffy and perfectly sweet.' },
-        { username: 'JaneSmith', rating: 5, comment: 'Best pancakes I ever had. Highly recommended!' }
+        { img:22, username: 'JohnDoe', rating: 4.5, comment: 'Delicious pancakes! Fluffy and perfectly sweet.' },
+        { img:20, username: 'JaneSmith', rating: 5, comment: 'Best pancakes I ever had. Highly recommended!' }
       ]
     },
     {
@@ -18,11 +18,11 @@ const menu = [
       name: 'Grilled Chicken Sandwich',
       description: 'Grilled chicken breast topped with lettuce, tomato, and mayo on a toasted bun. Served with a side of crispy fries.',
       price: 10.99,
-      image: 'https://source.unsplash.com/jYBh-pKo2zA',
+      image: 'src/assets/images/Grilled Chicken Sandwich.jpg',
       healthBenefits: ['High in protein', 'Good source of lean meat'],
       reviews: [
-        { username: 'AmyJohnson', rating: 4, comment: 'Great sandwich with juicy chicken!' },
-        { username: 'MikeThompson', rating: 4.5, comment: 'Perfectly grilled chicken. Loved the fries too.' }
+        { img:25, username: 'AmyJohnson', rating: 4, comment: 'Great sandwich with juicy chicken!' },
+        {img:24, username: 'MikeThompson', rating: 4.5, comment: 'Perfectly grilled chicken. Loved the fries too.' }
       ]
     },
     {
@@ -31,11 +31,11 @@ const menu = [
       name: 'Chocolate Banana Smoothie',
       description: 'A creamy blend of rich chocolate and ripe bananas, garnished with whipped cream and chocolate shavings.',
       price: 5.99,
-      image: 'https://source.unsplash.com/yUzv_oP61A0',
+      image: 'src/assets/images/Chocolate Banana Smoothie.jpg',
       healthBenefits: ['Rich in potassium', 'Good source of antioxidants'],
       reviews: [
-        { username: 'SarahBrown', rating: 5, comment: 'Amazing smoothie! The combination of chocolate and banana is divine.' },
-        { username: 'DavidWilson', rating: 4, comment: 'Delicious and refreshing. Perfect for chocolate lovers.' }
+        { img:22, username: 'SarahBrown', rating: 5, comment: 'Amazing smoothie! The combination of chocolate and banana is divine.' },
+        {img:40, username: 'DavidWilson', rating: 4, comment: 'Delicious and refreshing. Perfect for chocolate lovers.' }
       ]
     },
     {
@@ -44,11 +44,11 @@ const menu = [
       name: 'Avocado Toast',
       description: 'Freshly toasted bread topped with mashed avocado, a sprinkle of sea salt, and a drizzle of olive oil.',
       price: 9.99,
-      image: 'https://source.unsplash.com/eOcyhe5-9sQ',
+      image: 'src/assets/images/Avocado Toast.jpg',
       healthBenefits: ['Rich in healthy fats', 'Good source of fiber'],
       reviews: [
-        { username: 'JenniferLee', rating: 4.5, comment: 'Perfectly ripe avocado on delicious toast. Loved it!' },
-        { username: 'RobertSmith', rating: 5, comment: 'The best avocado toast I have ever tasted. Simple and flavorful.' }
+        {img:42, username: 'JenniferLee', rating: 4.5, comment: 'Perfectly ripe avocado on delicious toast. Loved it!' },
+        {img:33, username: 'RobertSmith', rating: 5, comment: 'The best avocado toast I have ever tasted. Simple and flavorful.' }
       ]
     },
     {
@@ -57,11 +57,11 @@ const menu = [
       name: 'Caesar Salad',
       description: 'Crisp romaine lettuce tossed with homemade Caesar dressing, Parmesan cheese, and crunchy croutons.',
       price: 9.99,
-      image: 'https://source.unsplash.com/O6ehctzX3bM',
+      image: 'src/assets/images/Caesar Salad.jpg',
       healthBenefits: ['High in vitamins and minerals', 'Good source of fiber'],
       reviews: [
-        { username: 'EmilyDavis', rating: 4, comment: 'Fresh and delicious Caesar salad. The dressing is perfect.' },
-        { username: 'DanielMiller', rating: 5, comment: 'Classic Caesar salad done right. Highly recommend it.' }
+        {img:52, username: 'EmilyDavis', rating: 4, comment: 'Fresh and delicious Caesar salad. The dressing is perfect.' },
+        {img:60, username: 'DanielMiller', rating: 5, comment: 'Classic Caesar salad done right. Highly recommend it.' }
       ]
     },
     {
@@ -70,11 +70,11 @@ const menu = [
       name: 'Strawberry Banana Smoothie',
       description: 'A refreshing blend of ripe strawberries, bananas, and creamy yogurt, topped with a strawberry garnish.',
       price: 6.99,
-      image: 'https://source.unsplash.com/q3a6S8YiVCQ',
+      image: 'src/assets/images/Strawberry Banana Smoothie.jpg',
       healthBenefits: ['Rich in vitamin C', 'Good source of potassium'],
       reviews: [
-        { username: 'MichaelJohnson', rating: 4.5, comment: 'Delicious and refreshing. Perfect combination of flavors.' },
-        { username: 'JessicaRobinson', rating: 4, comment: 'Great smoothie. The strawberry and banana pair so well together.' }
+        {img:30, username: 'MichaelJohnson', rating: 4.5, comment: 'Delicious and refreshing. Perfect combination of flavors.' },
+        {img:60, username: 'JessicaRobinson', rating: 4, comment: 'Great smoothie. The strawberry and banana pair so well together.' }
       ]
     },
     {
@@ -83,11 +83,11 @@ const menu = [
       name: 'Margherita Pizza',
       description: 'A traditional Italian pizza topped with fresh tomatoes, mozzarella cheese, and basil leaves.',
       price: 11.99,
-      image: 'https://source.unsplash.com/jcFb5nQXhSY',
+      image: 'src/assets/images/Margherita Pizza.jpg',
       healthBenefits: ['Good source of calcium', 'Contains lycopene'],
       reviews: [
-        { username: 'MarkTaylor', rating: 5, comment: 'Authentic Margherita pizza. The flavors are fantastic.' },
-        { username: 'LauraHarris', rating: 4.5, comment: 'Delicious pizza with a thin and crispy crust. Loved it!' }
+        {img:33, username: 'MarkTaylor', rating: 5, comment: 'Authentic Margherita pizza. The flavors are fantastic.' },
+        {img:50, username: 'LauraHarris', rating: 4.5, comment: 'Delicious pizza with a thin and crispy crust. Loved it!' }
       ]
     },
     {
@@ -96,11 +96,11 @@ const menu = [
       name: 'Cookies and Cream Shake',
       description: 'A delightful shake made with crushed chocolate cookies, vanilla ice cream, and a swirl of chocolate syrup.',
       price: 7.99,
-      image: 'https://source.unsplash.com/YLg-5YSHYZw',
+      image: 'src/assets/images/Cookies and Cream Shake.jpg',
       healthBenefits: ['Indulgent treat', 'Provides a sweet satisfaction'],
       reviews: [
-        { username: 'SophiaDavis', rating: 4, comment: 'Decadent and delicious. A must-try for cookie lovers.' },
-        { username: 'AndrewClark', rating: 5, comment: 'Heavenly shake with the perfect blend of cookies and cream.' }
+        {img:44, username: 'SophiaDavis', rating: 4, comment: 'Decadent and delicious. A must-try for cookie lovers.' },
+        {img:12, username: 'AndrewClark', rating: 5, comment: 'Heavenly shake with the perfect blend of cookies and cream.' }
       ]
     },
     {
@@ -109,11 +109,11 @@ const menu = [
       name: 'Eggs Benedict',
       description: 'Two poached eggs served on toasted English muffins with Canadian bacon and creamy hollandaise sauce.',
       price: 12.99,
-      image: 'https://source.unsplash.com/JcHKntd8JqI',
+      image: 'src/assets/images/Eggs Benedict.jpg',
       healthBenefits: ['Good source of protein', 'Provides essential amino acids'],
       reviews: [
-        { username: 'OliviaThomas', rating: 4.5, comment: 'Classic breakfast dish done perfectly. Loved the hollandaise sauce.' },
-        { username: 'JacobWilson', rating: 5, comment: 'Fantastic eggs Benedict. The poached eggs were cooked to perfection.' }
+        {img:1, username: 'OliviaThomas', rating: 4.5, comment: 'Classic breakfast dish done perfectly. Loved the hollandaise sauce.' },
+        {img:3, username: 'JacobWilson', rating: 5, comment: 'Fantastic eggs Benedict. The poached eggs were cooked to perfection.' }
       ]
     },
     {
@@ -122,11 +122,11 @@ const menu = [
       name: 'Caprese Salad',
       description: 'Fresh mozzarella cheese, juicy tomatoes, and basil leaves drizzled with balsamic glaze and olive oil.',
       price: 8.99,
-      image: 'https://source.unsplash.com/WvGhxZ1jgnw',
+      image: 'src/assets/images/Caprese Salad.jpg',
       healthBenefits: ['Good source of antioxidants', 'Provides healthy fats'],
       reviews: [
-        { username: 'EthanAdams', rating: 4, comment: 'Simple and delicious Caprese salad. The flavors are fantastic.' },
-        { username: 'EmmaHall', rating: 4.5, comment: 'Fresh and flavorful. The mozzarella and tomatoes are top-notch.' }
+        {img:5, username: 'EthanAdams', rating: 4, comment: 'Simple and delicious Caprese salad. The flavors are fantastic.' },
+        {img:6, username: 'EmmaHall', rating: 4.5, comment: 'Fresh and flavorful. The mozzarella and tomatoes are top-notch.' }
       ]
     },
     {
@@ -135,11 +135,11 @@ const menu = [
       name: 'Greek Yogurt Parfait',
       description: 'Creamy Greek yogurt layered with fresh berries, granola, and a drizzle of honey.',
       price: 6.99,
-      image: 'https://source.unsplash.com/1Pd2w4iKk-E',
+      image: 'src/assets/images/Greek Yogurt Parfait.jpg',
       healthBenefits: ['High in protein', 'Good source of probiotics'],
       reviews: [
-        { username: 'NoahMitchell', rating: 4.5, comment: 'Healthy and delicious parfait. The combination of flavors is great.' },
-        { username: 'AvaLewis', rating: 5, comment: 'Perfectly balanced and refreshing. Loved the fresh berries.' }
+        {img:7, username: 'NoahMitchell', rating: 4.5, comment: 'Healthy and delicious parfait. The combination of flavors is great.' },
+        {img:8, username: 'AvaLewis', rating: 5, comment: 'Perfectly balanced and refreshing. Loved the fresh berries.' }
       ]
     },
     {
@@ -148,11 +148,11 @@ const menu = [
       name: 'Peanut Butter Protein Shake',
       description: 'A protein-packed shake blended with creamy peanut butter, bananas, and a touch of honey.',
       price: 8.99,
-      image: 'https://source.unsplash.com/YEZC3xrOAI0',
+      image: 'src/assets/images/Peanut Butter Protein Shake.jpg',
       healthBenefits: ['High in protein', 'Provides essential amino acids'],
       reviews: [
-        { username: 'LiamYoung', rating: 4, comment: 'Delicious and filling shake. Great for post-workout recovery.' },
-        { username: 'MiaDavis', rating: 4.5, comment: 'Tasty and satisfying. The peanut butter flavor is perfect.' }
+        {img:9, username: 'LiamYoung', rating: 4, comment: 'Delicious and filling shake. Great for post-workout recovery.' },
+        {img:10, username: 'MiaDavis', rating: 4.5, comment: 'Tasty and satisfying. The peanut butter flavor is perfect.' }
       ]
     },
     {
@@ -161,11 +161,11 @@ const menu = [
       name: 'Mediterranean Wrap',
       description: 'A flavorful wrap filled with grilled vegetables, feta cheese, and a zesty tzatziki sauce.',
       price: 9.99,
-      image: 'https://source.unsplash.com/GzMSkub1GwE',
+      image: 'src/assets/images/Mediterranean Wrap.jpg',
       healthBenefits: ['Rich in vitamins and minerals', 'Good source of fiber'],
       reviews: [
-        { username: 'BenjaminKing', rating: 4.5, comment: 'Fresh and tasty wrap. The grilled vegetables are delicious.' },
-        { username: 'CharlotteTaylor', rating: 5, comment: 'Loved the Mediterranean flavors. The tzatziki sauce is fantastic.' }
+        {img:11, username: 'BenjaminKing', rating: 4.5, comment: 'Fresh and tasty wrap. The grilled vegetables are delicious.' },
+        {img:14, username: 'CharlotteTaylor', rating: 5, comment: 'Loved the Mediterranean flavors. The tzatziki sauce is fantastic.' }
       ]
     },
     {
@@ -174,11 +174,11 @@ const menu = [
       name: 'Vanilla Bean Milkshake',
       description: 'A classic milkshake made with creamy vanilla ice cream and topped with whipped cream and a cherry.',
       price: 6.99,
-      image: 'https://source.unsplash.com/_b7kV2jwD1g',
+      image: 'src/assets/images/Vanilla Bean Milkshake.jpg',
       healthBenefits: ['Indulgent treat', 'Provides a sweet satisfaction'],
       reviews: [
-        { username: 'HarperRobinson', rating: 4, comment: 'Delicious and nostalgic milkshake. Perfectly creamy.' },
-        { username: 'WilliamHarris', rating: 5, comment: 'Fantastic vanilla milkshake. Reminds me of childhood.' }
+        {img:15, username: 'HarperRobinson', rating: 4, comment: 'Delicious and nostalgic milkshake. Perfectly creamy.' },
+        {img:17, username: 'WilliamHarris', rating: 5, comment: 'Fantastic vanilla milkshake. Reminds me of childhood.' }
       ]
     },
     {
@@ -187,11 +187,11 @@ const menu = [
       name: 'Egg White Omelette',
       description: 'A healthy omelette made with fluffy egg whites, spinach, mushrooms, and a sprinkle of cheese.',
       price: 9.99,
-      image: 'https://source.unsplash.com/DJf3I1ayZPQ',
+      image: 'src/assets/images/Egg White Omelette.jpg',
       healthBenefits: ['Low in fat', 'Rich in vitamins and minerals'],
       reviews: [
-        { username: 'JamesClark', rating: 4.5, comment: 'Delicious and healthy omelette. The flavors are fantastic.' },
-        { username: 'SophieAnderson', rating: 5, comment: 'Perfectly cooked and packed with nutritious ingredients.' }
+        {img:18, username: 'JamesClark', rating: 4.5, comment: 'Delicious and healthy omelette. The flavors are fantastic.' },
+        {img:19, username: 'SophieAnderson', rating: 5, comment: 'Perfectly cooked and packed with nutritious ingredients.' }
       ]
     },
     {
@@ -200,11 +200,11 @@ const menu = [
       name: 'Quinoa Salad',
       description: 'A refreshing salad with quinoa, mixed greens, cherry tomatoes, cucumbers, and a tangy vinaigrette.',
       price: 10.99,
-      image: 'https://source.unsplash.com/X1H18kwOy6I',
+      image: 'src/assets/images/Quinoa Salad.jpg',
       healthBenefits: ['High in protein', 'Rich in fiber'],
       reviews: [
-        { username: 'EmmaJohnson', rating: 4, comment: 'Healthy and flavorful salad. The quinoa adds a nice texture.' },
-        { username: 'AlexanderBrown', rating: 4.5, comment: 'Delicious and filling. Loved the combination of ingredients.' }
+        {img:32, username: 'EmmaJohnson', rating: 4, comment: 'Healthy and flavorful salad. The quinoa adds a nice texture.' },
+        {img:39, username: 'AlexanderBrown', rating: 4.5, comment: 'Delicious and filling. Loved the combination of ingredients.' }
       ]
     },
     {
@@ -213,11 +213,11 @@ const menu = [
       name: 'Matcha Green Tea Smoothie',
       description: 'A refreshing smoothie made with matcha green tea, almond milk, honey, and a hint of vanilla.',
       price: 7.99,
-      image: 'https://source.unsplash.com/fOs3MmqiU2w',
+      image: 'src/assets/images/Matcha Green Tea Smoothie.jpg',
       healthBenefits: ['Rich in antioxidants', 'Boosts metabolism'],
       reviews: [
-        { username: 'LucasMiller', rating: 4.5, comment: 'Great smoothie with a unique and refreshing flavor.' },
-        { username: 'OliviaHall', rating: 4, comment: 'Delicious and energizing. The matcha flavor is delightful.' }
+        {img:41, username: 'LucasMiller', rating: 4.5, comment: 'Great smoothie with a unique and refreshing flavor.' },
+        {img:63, username: 'OliviaHall', rating: 4, comment: 'Delicious and energizing. The matcha flavor is delightful.' }
       ]
     }
   ];
