@@ -35,7 +35,13 @@ function MenuList() {
 }
 function Menu() {
   return (
-    <h1>working</h1>
+    <div className="menu">
+      <img src="https://source.unsplash.com/Ra4wxfmP84A" alt="" />
+      <div className="title-section">
+        <h3>name</h3>
+        <p>$60</p>
+      </div>
+    </div>
   )
 }
 
