@@ -15,7 +15,15 @@ function App (){
 
 function NavBar() {
   return(
-    <h1>navbar</h1>
+    <nav className='nav-section'>
+      <h1>our menu</h1>
+      <ul>
+        <li>all</li>
+        <li>breakfast</li>
+        <li>lunch</li>
+        <li>shakes</li>
+      </ul>
+    </nav>
   )
 }
 
