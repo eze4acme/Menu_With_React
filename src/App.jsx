@@ -1,4 +1,5 @@
-import menu from "../data";
+import { useState } from "react";
+import data from "../data";
 import "./App.css";
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
       <div className="container">
         <MenuList />
       </div>
+      <Footer />
     </div>
   );
 }
@@ -32,6 +34,7 @@ function NavBar() {
 }
 //menu listing
 function MenuList() {
+  const [menu, setMenu] = useState(data)
   const menuItems = menu.map((menuItem) => {
     return <Menu key={menuItem.id} {...menuItem} />;
   });
@@ -41,6 +44,7 @@ function MenuList() {
 //single menu
 function Menu(props) {
   const { name, description, price, healthBenefits, image, reviews } = props;
+  console.log(props.reviews.img);
   const healthSection = healthBenefits.map((healthBenefit) => {
     return <li className="list">{healthBenefit}</li>;
   });
@@ -69,14 +73,20 @@ function Menu(props) {
                 <div className="comment-section">
                   <h4 className="username">@{username}</h4>
                   <p className="comment">{comment}</p>
+                  <p className="rating">Rating: {rating}</p>
                 </div>
-              <p className="rating">{rating}</p>
             </div>
           );
         })}
       </div>
     </div>
   );
+}
+// footer section
+function Footer() {
+  return(
+    <h4 className="footer">Develop By &copy; Eze. {new Date().getFullYear()} </h4>
+  )
 }
 
 export default App;

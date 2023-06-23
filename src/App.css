@@ -3,14 +3,14 @@ body {
   background-color: rgb(231, 206, 159);
 }
 .container {
-  max-width: 1180px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding-bottom: 50px;
 }
 .nav-section {
   background: linear-gradient(to right, orange, orangered);
   display: flex;
   padding: 5px 30px;
-  /* justify-content: space-around; */
 }
 .nav-caption {
   text-align: center;
@@ -49,18 +49,16 @@ body {
   color: white;
 }
 .logo {
-  /* position: relative; */
   background-color: orangered;
   border-radius: 50%;
   text-align: center;
   padding: 8px;
   color: white;
-  /* font-size: ; */
-  /* display: block; */
+  filter: drop-shadow(10px 10px black);
+  box-shadow: -10px -10px black;
 }
 .logo::before {
   content: "Acme";
-  /* display: block; */
   background-color: white;
   font-size: 12px;
   border-radius: 50%;
@@ -68,25 +66,16 @@ body {
   color: orangered;
   text-shadow: 0 0 1px black;
   padding: 5px;
-  /* position: absolute;
-  bottom: 0;
-  left: 0; */
-  /* right: 0; */
-  /* top: 0; */
 }
 
 .logo::after {
   content: "Food is life";
   display: block;
   background-color: white;
-  /* position: absolute; */
   font-size: 12px;
   border-radius: 50%;
-  /* font-weight: 900; */
   text-shadow: 0 0 1px black;
   color: orangered;
-  /* padding:0 15px; */
-  /* bottom:10px; */
 }
 
 span {
@@ -98,13 +87,7 @@ span {
 
 /* Menu section */
 .menu-img {
-  /* max-width: 100%; */
-  /* height: 250px; */
-  /* width: 380px;  */
-  /* max-height: 100%; */
-  /* object-fit: cover; */
   border-radius: 15px;
-  /* padding: 50px 0; */
   object-fit: cover;
   width: 380px;
   max-height: 250px;
@@ -114,7 +97,6 @@ span {
 section {
   display: grid;
   grid-template: 1fr/1fr 1fr 1fr;
-  /* background-color: blue; */
   gap: 40px;
 }
 .title-section{
@@ -126,15 +108,13 @@ section {
   padding-left: -10px;
   text-transform: 0 0 1px black;
   margin-bottom: 0;
-  /* letter-spacing:1px;  */
 }
-.title-section p{
+.title-section p, .rating{
   background-color: orange;
   padding: 3px 10px;
   border-radius: 3px;
   text-transform: 0 0 1px black;
   color: white;
-  /* letter-spacing:1px; */
   font-weight: bold;
 }
 .description{
@@ -165,7 +145,6 @@ section {
   content: '*';
   text-align: center;
   color: red;
-  /* margin-right: 3px; */
   font-size: 18px;
   font-weight: bolder;
   position: absolute;
@@ -174,14 +153,41 @@ section {
 }
 .username-section{
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  background-color: red;
+  margin-top: 1px;
 }
 
 .username-section img{
-  max-width: 50px;
-  max-height: 50px;
   border-radius: 50%;
-  /* object-fit: cover; */
+  margin-top: -30px;
+}
+.comment-section{
+  width: 70%;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+.comment-section h4{
+  margin-bottom: 0;
+}
+.comment-section p{
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.rating{
+  display: inline;
+  background-color: red;
+}
+.footer{
+  background: linear-gradient(to right, orangered, yellow);
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+  text-shadow: 0 0 0.5px black;
+  height: 4.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

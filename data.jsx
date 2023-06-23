@@ -133,7 +133,7 @@ const menu = [
       id: 'd9f5acaf-9e5a-4920-9185-dc32a79e892d',
       category: 'breakfast',
       name: 'Greek Yogurt Parfait',
-      description: 'Creamy Greek yogurt layered with fresh berries, granola, and a drizzle of honey.',
+      description: 'This is the best Creamy Greek yogurt layered with fresh berries, granola, and a drizzle of honey.',
       price: 6.99,
       image: 'src/assets/images/Greek Yogurt Parfait.jpg',
       healthBenefits: ['High in protein', 'Good source of probiotics'],
@@ -219,7 +219,21 @@ const menu = [
         {img:41, username: 'LucasMiller', rating: 4.5, comment: 'Great smoothie with a unique and refreshing flavor.' },
         {img:63, username: 'OliviaHall', rating: 4, comment: 'Delicious and energizing. The matcha flavor is delightful.' }
       ]
-    }
+    },
+    {
+      id: 'c439e789-29a0-4d10-99e4-25eb5b8c10d7',
+      category: 'breakfast',
+      name: 'Blueberry Pancakes',
+      description: 'Fluffy pancakes made with fresh blueberries and served with maple syrup and a dollop of whipped cream.',
+      price: 9.99,
+      image: 'src/assets/images/Blueberry Pancakes.jpg',
+      healthBenefits: ['Good source of antioxidants', 'Provides dietary fiber'],
+      reviews: [
+        {img:72, username: 'LilyMoore', rating: 4.5, comment: 'Amazing blueberry pancakes. They are light and fluffy.' },
+        {img:33, username: 'HenryClark', rating: 5, comment: 'Delicious pancakes with a generous amount of blueberries.' }
+      ]
+  }
+  
   ];
   
 export default menu
