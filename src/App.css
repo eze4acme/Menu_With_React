@@ -117,3 +117,38 @@ section {
   /* background-color: blue; */
   gap: 40px;
 }
+.title-section{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.title-section h3{
+  padding-left: -10px;
+  text-transform: 0 0 1px black;
+  /* letter-spacing:1px;  */
+}
+.title-section p{
+  background-color: orange;
+  padding: 3px 10px;
+  border-radius: 3px;
+  text-transform: 0 0 1px black;
+  color: white;
+  /* letter-spacing:1px; */
+  font-weight: bold;
+}
+.description{
+  padding: 0 20px;
+  color: rgb(48, 45, 45);
+  text-transform: 1px 1px 1px black;
+  letter-spacing:1px;
+  font-size: 18px;
+  margin-top: 5px;
+  line-height: 25px;
+}
+.list{
+  list-style-type: disc;
+}
+.list::marker{
+  color: red;
+  
+}

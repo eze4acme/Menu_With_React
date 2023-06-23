@@ -49,19 +49,24 @@ function MenuList() {
 //single menu
 function Menu(props) {
   const {name, description, price, healthBenefits, image, reviews} =props
+  const healthSection = healthBenefits.map(healthBenefit => {
+    return (<li className="list">{healthBenefit}</li>)
+   })
   const url = "https://randomuser.me/api/portraits/med/men/75.jpg";
   return (
     <div className="menu">
       <img className="menu-img" src={image} alt="" />
       <div className="title-section">
         <h3>{name}</h3>
-        <p>{price}</p>
+        <p>$ {price}</p>
       </div>
-      <div className="description">
+      <div className="description-section">
         <p className="description">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          {description}
         </p>
-        <p className="health-benefit">Lorem ipsum dolor sit amet.</p>
+        <p className="health-benefit">Health Benefit: <ul>
+         {healthSection}
+          </ul></p>
       </div>
       <div className="customer-reviews">
         <img src={url} alt="" />
