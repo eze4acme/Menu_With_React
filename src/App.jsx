@@ -32,27 +32,19 @@ function NavBar() {
 }
 //menu listing
 function MenuList() {
-  const menuItems = menu.map(menuItem => {
-    console.log(menuItem);
-    return (<Menu 
-      key={menuItem.id}
-      {...menuItem} />);
-
-  })
-  return(
-    <section>
-       {menuItems}
-    </section>
-  )
+  const menuItems = menu.map((menuItem) => {
+    return <Menu key={menuItem.id} {...menuItem} />;
+  });
+  return <section>{menuItems}</section>;
 }
 
 //single menu
 function Menu(props) {
-  const {name, description, price, healthBenefits, image, reviews} =props
-  const healthSection = healthBenefits.map(healthBenefit => {
-    return (<li className="list">{healthBenefit}</li>)
-   })
-  const url = "https://randomuser.me/api/portraits/med/men/75.jpg";
+  const { name, description, price, healthBenefits, image, reviews } = props;
+  const healthSection = healthBenefits.map((healthBenefit) => {
+    return <li className="list">{healthBenefit}</li>;
+  });
+  const url = "https://randomuser.me/api/portraits/thumb/women/75.jpg";
   return (
     <div className="menu">
       <img className="menu-img" src={image} alt="" />
@@ -61,18 +53,27 @@ function Menu(props) {
         <p>$ {price}</p>
       </div>
       <div className="description-section">
-        <p className="description">
-          {description}
+        <p className="description">{description}</p>
+        <p className="health-benefit">
+          <strong>Health Benefit:</strong>
+          <ul>{healthSection}</ul>
         </p>
-        <p className="health-benefit">Health Benefit: <ul>
-         {healthSection}
-          </ul></p>
       </div>
       <div className="customer-reviews">
-        <img src={url} alt="" />
-        <h4 className="username">mark</h4>
-        <p className="rating">6.9</p>
-        <p className="comment">Lorem, ipsum dolor.</p>
+        {reviews.map((review) => {
+          const { img, username, rating, comment } = review;
+          const url = `https://randomuser.me/api/portraits/thumb/women/${img}.jpg`;
+          return (
+            <div key={img} className="username-section">
+                <img src={url} alt="" />
+                <div className="comment-section">
+                  <h4 className="username">@{username}</h4>
+                  <p className="comment">{comment}</p>
+                </div>
+              <p className="rating">{rating}</p>
+            </div>
+          );
+        })}
       </div>
     </div>
   );

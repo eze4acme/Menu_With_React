@@ -3,7 +3,7 @@ const menu = [
       id: '1eabb0d3-18c2-4c0f-937b-43c222ca40c7',
       category: 'breakfast',
       name: 'Classic Pancakes',
-      description: 'Fluffy buttermilk pancakes served with maple syrup and a pat of butter.',
+      description: 'Fluffy buttermilk pancakes served with maple syrup and a pat of butter. it is better served hot.',
       price: 8.99,
       image: 'src/assets/images/Classic Pancakes.jpg',
       healthBenefits: ['Good source of carbohydrates', 'Provides energy for the day'],
@@ -21,7 +21,7 @@ const menu = [
       image: 'src/assets/images/Grilled Chicken Sandwich.jpg',
       healthBenefits: ['High in protein', 'Good source of lean meat'],
       reviews: [
-        { img:25, username: 'AmyJohnson', rating: 4, comment: 'Great sandwich with juicy chicken!' },
+        { img:25, username: 'AmyJohnson', rating: 4, comment: 'This is the Great sandwich with juicy chicken! and aroma' },
         {img:24, username: 'MikeThompson', rating: 4.5, comment: 'Perfectly grilled chicken. Loved the fries too.' }
       ]
     },

@@ -7,7 +7,7 @@ body {
   margin: 0 auto;
 }
 .nav-section {
-  background-color: #f7f4ef;
+  background: linear-gradient(to right, orange, orangered);
   display: flex;
   padding: 5px 30px;
   /* justify-content: space-around; */
@@ -125,6 +125,7 @@ section {
 .title-section h3{
   padding-left: -10px;
   text-transform: 0 0 1px black;
+  margin-bottom: 0;
   /* letter-spacing:1px;  */
 }
 .title-section p{
@@ -142,12 +143,45 @@ section {
   text-transform: 1px 1px 1px black;
   letter-spacing:1px;
   font-size: 18px;
-  margin-top: 5px;
+  margin-top: 0px;
   line-height: 25px;
 }
-.list{
-  list-style-type: disc;
+.health-benefit{
+  padding: 0px 20px;
 }
-.list::marker{
+.health-benefit ul{
+  margin-top:2px;
+  padding-left: 20px;
+}
+.list{
+  list-style-type: none;
+  position: relative;
+  margin-top: 3px;
+  letter-spacing: 1px;
+  text-transform: 0 0 1px black;
+  padding-left: 2px;
+}
+.list:before{
+  content: '*';
+  text-align: center;
   color: red;
+  /* margin-right: 3px; */
+  font-size: 18px;
+  font-weight: bolder;
+  position: absolute;
+  left:-11px;
+  bottom: -5px;
+}
+.username-section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: red;
+}
+
+.username-section img{
+  max-width: 50px;
+  max-height: 50px;
+  border-radius: 50%;
+  /* object-fit: cover; */
 }
