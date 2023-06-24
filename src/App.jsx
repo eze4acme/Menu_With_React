@@ -13,6 +13,7 @@ function App() {
     </div>
   );
 }
+
 // nav-bar section
 function NavBar() {
   return (
@@ -85,7 +86,7 @@ function Menu(props) {
 // footer section
 function Footer() {
   return(
-    <h4 className="footer">Develop By &copy; Eze. {new Date().getFullYear()} </h4>
+    <h4 className="footer"> Develop By &copy; Eze. {new Date().getFullYear()} </h4>
   )
 }
 
