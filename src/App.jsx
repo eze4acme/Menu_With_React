@@ -45,9 +45,9 @@ function MenuList() {
 //single menu
 function Menu(props) {
   const { name, description, price, healthBenefits, image, reviews } = props;
-  console.log(props.reviews.img);
-  const healthSection = healthBenefits.map((healthBenefit) => {
-    return <li className="list">{healthBenefit}</li>;
+  // console.log(props.reviews.img);
+  const healthSection = healthBenefits.map((healthBenefit, index) => {
+    return <li className="list" key={index}>{healthBenefit}</li>;
   });
   const url = "https://randomuser.me/api/portraits/thumb/women/75.jpg";
   return (
