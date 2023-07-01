@@ -79,7 +79,7 @@ body {
 }
 
 span {
-  color: yellow;
+  color: rgb(209, 209, 18);
   font-size: 45px;
   text-shadow: 0 0 1px black;
   font-weight: 900;
